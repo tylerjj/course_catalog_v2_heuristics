@@ -1,9 +1,11 @@
 {
+  "homepage": "https://tylerjj.github.io/course_catalog_v2_heuristics",
   "name": "course-guide-app",
   "version": "0.2.0",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.1.1",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-rc.0",
     "react-dom": "^17.0.2",
@@ -13,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
